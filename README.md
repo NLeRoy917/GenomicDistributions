@@ -1,4 +1,8 @@
-[![Build Status](https://travis-ci.org/databio/GenomicDistributions.svg?branch=dev)](https://travis-ci.org/databio/GenomicDistributions)
+| Master | Dev |
+|--------|-----|
+|[![Build Status](https://travis-ci.org/databio/GenomicDistributions.svg?branch=master)](https://travis-ci.org/databio/GenomicDistributions) | [![Build Status](https://travis-ci.org/databio/GenomicDistributions.svg?branch=dev)](https://travis-ci.org/databio/GenomicDistributions) |
+
+
 
 # GenomicDistributions
 
@@ -9,12 +13,14 @@ Functions for calculating and plotting the distribution of query features (*e.g.
 ### Main package
 
 ```r
-devtools::install_github("databio/GenomicDistributions")
+if (!requireNamespace("BiocManager", quietly = TRUE))
+install.packages("BiocManager")
+BiocManager::install("GenomicDistributions")
 ```
 
 ### Data package
 
-[GenomicDistributuionsData](https://github.com/databio/GenomicDistributionsData): includes full data files, too large to include in GenomicDistributions
+[GenomicDistributionsData](https://github.com/databio/GenomicDistributionsData): includes full data files, too large to include in GenomicDistributions
 
 
 ## Quick start
